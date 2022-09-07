@@ -1,0 +1,93 @@
+.main-body-circle {
+  position: relative;
+  width: fit-content;
+  background-color: transparent;
+  animation: spin--fan 1s linear 1 normal both;
+}
+.circle-main-1,
+.circle-main-2,
+.circle-main-3 {
+  background-color: rgb(169, 207, 198);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.circle-1,
+.circle-4 {
+  position: absolute;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+.circle-2,
+.circle-5 {
+  background-color: rgb(174, 180, 197);
+  position: absolute;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.circle-3,
+.circle-6 {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+.circle-1 {
+  left: calc(50% + 10px);
+}
+.circle-2 {
+  left: calc(50% + 20px);
+}
+.circle-3 {
+  left: calc(50% + 27.5px);
+}
+.circle-4 {
+  left: calc(50% - 70px);
+}
+.circle-5 {
+  left: calc(50% - 60px);
+}
+.circle-6 {
+  left: calc(50% - 52.5px);
+}
+.circle-center {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: white;
+}
+.circle-branch-1,
+.circle-branch-2 {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: white;
+}
+.circle-branch-1 {
+  left: calc(50% + 60px);
+}
+.circle-branch-2 {
+  left: calc(50% - 100px);
+}
+@keyframes spin--fan {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(4deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-4deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
